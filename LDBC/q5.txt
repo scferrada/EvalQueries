@@ -1,0 +1,12 @@
+PREFIX n:<https://example.org/node/>
+PREFIX p:<https://example.org/property/>
+PREFIX r:<https://example.org/relationship/>
+PREFIX c:<https://example.org/label/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT * WHERE {
+	n:1 r:KNOWS ?p1 .
+	?p1 r:KNOWS ?p2 .
+	?f	r:HAS_MEMBER ?p2 .
+	?f	r:CONTAINER_OF ?p .
+}

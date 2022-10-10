@@ -1,0 +1,10 @@
+PREFIX n:<https://example.org/node/>
+PREFIX p:<https://example.org/property/>
+PREFIX r:<https://example.org/relationship/>
+PREFIX c:<https://example.org/label/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT * WHERE {
+	?m	r:HAS_CREATOR n:1 .
+	<<?p r:LIKES ?m>> p:creationDate ?d .
+}
