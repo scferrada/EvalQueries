@@ -5,12 +5,12 @@ PREFIX c:<https://example.org/label/>
 PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT * WHERE {
-	n:1	r:KNOWS	?p1 .
-	n:1 r:KNOWS ?p2 .
+	n:533224 r:KNOWS ?p1 .
+	?p1 r:KNOWS ?p2 .
 	?m1 r:HAS_CREATOR ?p2 .
 	?m2 r:HAS_CREATOR ?p2 .
 	?m1 r:IS_LOCATED_IN ?c1 .
 	?m2 r:IS_LOCATED_IN ?c2 .
-	?c1 p:name "United States" .
-	?c2 p:name "United Kingdom" .
+	?c1 p:name "Bolivia" .
+	?c2 p:name "Philippines" .
 }

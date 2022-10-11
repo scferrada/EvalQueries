@@ -5,6 +5,6 @@ PREFIX c:<https://example.org/label/>
 PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT * WHERE {
-	n:1 r:KNOWS ?p .
-	?p  p:firstName "Peter" .
+	n:533220 r:KNOWS ?p .
+	?p  p:firstName "John" .
 }

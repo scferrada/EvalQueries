@@ -1,0 +1,1 @@
+MATCH (p)-[e:LIKES]->(m)-[:HAS_CREATOR]-(n1) WHERE ID(n1)=533228 AND EXISTS(e.creationDate) RETURN m, p, e.creationDate AS d

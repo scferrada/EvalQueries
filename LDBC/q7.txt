@@ -5,6 +5,6 @@ PREFIX c:<https://example.org/label/>
 PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT * WHERE {
-	?m	r:HAS_CREATOR n:1 .
+	?m	r:HAS_CREATOR n:533228 .
 	<<?p r:LIKES ?m>> p:creationDate ?d .
 }

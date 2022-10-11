@@ -5,10 +5,11 @@ PREFIX c:<https://example.org/label/>
 PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT * WHERE {
-	n:1 r:KNOWS ?p1 .
+	n:533229 r:KNOWS ?p1 .
 	?p	rdfs:label c:Post .
 	?c	rdfs:label c:Comment .
 	?c	r:REPLY_OF ?p .
+	?c	r:HAS_CREATOR ?p1 .
 	?p 	r:HAS_TAG ?t .
-	?t	r:HAS_TYPE n:3 . #get a tagClass id
+	?t	r:HAS_TYPE n:565138 .
 }
