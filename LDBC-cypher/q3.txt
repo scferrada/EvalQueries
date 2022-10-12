@@ -1,5 +1,1 @@
-MATCH (n1)-[:KNOWS]->(p1)-[:KNOWS]->(p2) 
-MATCH (c1 {name:"Bolivia"})<-[:IS_LOCATED_IN]-(m1)-[:HAS_CREATOR]->(p2)
-MATCH (c2 {name:"Philippines"})<-[:IS_LOCATED_IN]-(m2)-[:HAS_CREATOR]->(p2)
-WHERE ID(n1)=533224
-RETURN p1, p2, m1, m2, c1, c2
+MATCH (n1)-[:KNOWS]->(p1)-[:KNOWS]->(p2) MATCH (c1 {name:'Bolivia'})<-[:IS_LOCATED_IN]-(m1)-[:HAS_CREATOR]->(p2) MATCH (c2 {name:'Philippines'})<-[:IS_LOCATED_IN]-(m2)-[:HAS_CREATOR]->(p2) WHERE ID(n1)=533224 RETURN p1, p2, m1, m2, c1, c2

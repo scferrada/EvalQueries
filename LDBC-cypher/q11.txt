@@ -1,1 +1,1 @@
-MATCH (n1)-[:KNOWS]->(p1)-[:KNOWS]->(p2)-[:WORK_AT]->(w)-[:IS_LOCATED_IN]->(c {name: "China"}) WHERE ID(n1)=533221 RETURN p1, p2, w, c
+MATCH (n1)-[:KNOWS]->(p1)-[:KNOWS]->(p2)-[:WORK_AT]->(w)-[:IS_LOCATED_IN]->(c {name: 'China'}) WHERE ID(n1)=533221 RETURN p1, p2, w, c
