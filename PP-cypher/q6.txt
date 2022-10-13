@@ -1,0 +1,1 @@
+MATCH (x)-[y:officer_of]->(n1) WHERE ID(n1)=1173321 UNWIND [k IN keys(y) | [k, y[k]]] AS a1 RETURN x, a1[0] AS p, a1[1] AS o, head(labels(x)) AS c

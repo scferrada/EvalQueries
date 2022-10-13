@@ -1,0 +1,1 @@
+MATCH (o)-[r:officer_of]->(e) WHERE EXISTS(r.start_date) RETURN o, e, head(labels(e)) as class, r.start_date as t

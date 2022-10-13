@@ -1,0 +1,1 @@
+MATCH (x)-[r]-(e:entity) RETURN x, r, e, head(labels(x)) AS c

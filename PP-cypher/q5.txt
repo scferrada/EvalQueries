@@ -1,0 +1,1 @@
+MATCH (x)-[y]->(z) WHERE EXISTS(y.link) RETURN x, y, z, y.link AS l
