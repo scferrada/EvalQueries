@@ -1,0 +1,1 @@
+MATCH (a1)-[a2]->(a3) MATCH (a4)-[a5]->(a6) MATCH (a7)-[a8]->(a9) WHERE ID(a3)=533230 AND a2:HAS_CREATOR AND a5:HAS_CREATOR AND a8:REPLY_OF AND a7=a4 AND a9=a1 RETURN a1 AS ret1, a4 AS ret2, a6 AS ret3
