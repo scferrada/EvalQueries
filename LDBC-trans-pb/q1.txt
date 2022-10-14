@@ -1,1 +1,0 @@
-MATCH (a1) MATCH (a2)-[a3]->(a4) WHERE a1.firstName='John' AND ID(a2)=533220 AND a3:KNOWS AND a4=a1 RETURN a1 AS ret1

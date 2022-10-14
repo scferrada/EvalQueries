@@ -1,1 +1,0 @@
-MATCH (a1)-[a2]->(a3) MATCH (a4)-[a5]->(a6) WHERE a2:HAS_CREATOR AND ID(a4)=533223 AND a5:KNOWS AND a6=a3 RETURN a1 AS ret1, a3 AS ret2

@@ -1,1 +1,0 @@
-MATCH (a1)-[a2]->(a3) MATCH (a4)-[a5]->(a6) MATCH (a7)-[a8]->(a9) MATCH (a10)-[a11]->(a12) MATCH (a13) WHERE a2:WORK_AT AND a5:KNOWS AND a6=a1 AND a8:IS_LOCATED_IN AND a7=a3 AND ID(a10)=533221 AND a11:KNOWS AND a12=a4 AND a13.name='China' AND a13=a9 RETURN a1 AS ret1, a3 AS ret2, a4 AS ret3, a9 AS ret4

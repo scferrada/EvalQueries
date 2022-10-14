@@ -1,1 +1,0 @@
-MATCH (a1)-[a2]->(a3) MATCH (a4)-[a5]->(a6) WHERE a2:LIKES AND EXISTS(a2.creationDate) AND ID(a6)=533228 AND a5:HAS_CREATOR AND a4=a3 RETURN a1 AS ret1, a3 AS ret2, a2.creationDate AS ret3

@@ -1,1 +1,0 @@
-MATCH (a1) MATCH (a2)-[a3]->(a4) MATCH (a5)-[a6]->(a7) MATCH (a8)-[a9]->(a10) MATCH (a11) WHERE a1:Post AND a3:HAS_CREATOR AND a2=a1 AND ID(a5)=533225 AND a6:KNOWS AND a7=a4 AND a9:HAS_TAG AND a8=a1 AND EXISTS(a11.name) AND a11=a10 RETURN a1 AS ret1, a4 AS ret2, a10 AS ret3, a11.name AS ret4
