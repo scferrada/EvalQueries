@@ -1,1 +1,1 @@
-MATCH (x)-[r]->(n1) WHERE ID(n1)=1173321 RETURN x, r, head(labels(x)) as c
+MATCH (x {name:'THE BEARER'})-[r]->(e:address) RETURN x, r, head(labels(x)) as c

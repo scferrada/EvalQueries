@@ -5,6 +5,8 @@ PREFIX c:<https://example.org/label/>
 PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT * WHERE {
-	?x ?r n:1173321 .
+	?x ?r ?e .
 	?x rdfs:label ?c .
+	?e rdfs:label c:address .
+	?x p:name "THE BEARER" .
 }
