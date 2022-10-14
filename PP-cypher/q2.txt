@@ -1,1 +1,1 @@
-MATCH (e:entity) MATCH (o) UNWIND[k IN keys(o) WHERE o[k]="XI JIE" AND k IN keys(e) | [k, e[k]]] AS a1 RETURN e, o, a1[0] AS p, a1[1] AS l
+MATCH (e:entity)<-[:officer_of]-(o) UNWIND [k IN keys(o) WHERE o[k]="THE BEARER" AND k IN keys(e) | [k, e[k]]] AS a1 RETURN e, o, a1[0] AS p, a1[1] AS l
