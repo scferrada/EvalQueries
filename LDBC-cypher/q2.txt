@@ -1,1 +1,0 @@
-MATCH (n1)-[:KNOWS]->(p)<-[:HAS_CREATOR]-(m) WHERE ID(n1)=533223 RETURN m, p

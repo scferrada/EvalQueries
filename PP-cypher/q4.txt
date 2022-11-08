@@ -1,1 +1,0 @@
-MATCH (x)-[r]-(e) WHERE ID(e)=1173325 RETURN x, r, e, head(labels(x)) AS c

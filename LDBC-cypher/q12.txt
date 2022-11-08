@@ -1,1 +1,0 @@
-MATCH (n1)-[:KNOWS]->(p1)<-[:HAS_CREATOR]-(c:Comment)-[:REPLY_OF]->(p:Post)-[:HAS_TAG]->(t)-[:HAS_TYPE]->(t1) WHERE ID(n1)=533229 AND ID(t1)=565138 RETURN p1, p, c, t

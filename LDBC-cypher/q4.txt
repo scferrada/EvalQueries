@@ -1,1 +1,0 @@
-MATCH (n1)-[:KNOWS]->(p)<-[:HAS_CREATOR]-(m:Post)-[:HAS_TAG]->(t) WHERE ID(n1)=533225 AND EXISTS(t.name) RETURN p, m, t, t.name AS n1

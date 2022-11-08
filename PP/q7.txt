@@ -1,0 +1,16 @@
+PREFIX n:<https://example.org/node/>
+PREFIX p:<https://example.org/property/>
+PREFIX r:<https://example.org/relationship/>
+PREFIX c:<https://example.org/label/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT * WHERE {
+	?x rdfs:label c:officer .
+	?x r:officer_of ?y .
+	?y rdfs:label x:officer .
+	?x r:officer_of ?z .
+	?z rdfs:label c:intermediary .
+	?x r:officer_of ?w .
+	?w rdfs:label c:entity .
+	?x r:registered_address ?u .
+}

@@ -1,1 +1,0 @@
-MATCH (x {name:'THE BEARER'})-[r]->(e:address) RETURN x, r, head(labels(x)) as c

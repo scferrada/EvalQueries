@@ -1,1 +1,0 @@
-MATCH (n1)-[:KNOWS]->(p {firstName: 'John'}) WHERE ID(n1)=533220 RETURN p
