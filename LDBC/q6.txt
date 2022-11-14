@@ -9,6 +9,6 @@ SELECT * WHERE {
 	?p1 r:KNOWS ?p2 .
 	?p	rdfs:label c:Post .
 	?p	r:HAS_CREATOR ?p2 .
-	?p	r:HAS_TAG n:671883 .
+	?p	r:HAS_TAG n:1718300 .
 	?p	r:HAS_TAG ?t .
 }

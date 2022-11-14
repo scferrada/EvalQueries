@@ -11,5 +11,5 @@ SELECT * WHERE {
 	?c	r:REPLY_OF ?p .
 	?c	r:HAS_CREATOR ?p1 .
 	?p 	r:HAS_TAG ?t .
-	?t	r:HAS_TYPE n:565138 .
+	?t	r:HAS_TYPE n:822674 .
 }
