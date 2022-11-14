@@ -5,7 +5,7 @@ PREFIX c:<https://example.org/label/>
 PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT * WHERE {
-	?m	r:HAS_CREATOR n:533230 .
+	?m	r:HAS_CREATOR n:1774622 .
 	?c	r:REPLY_OF ?m .
 	?c	r:HAS_CREATOR ?p .
 }
