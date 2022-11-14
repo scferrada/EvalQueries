@@ -1,0 +1,1 @@
+MATCH (n1)-[:KNOWS]->(p1)-[:KNOWS]->(p2)<-[:HAS_MEMBER]-(f)-[:CONTAINER_OF]->(p) MATCH (p)-[:HAS_CREATOR]->(p2) WHERE ID(n1)=779607 RETURN n1, p1, p2, f, p

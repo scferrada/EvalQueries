@@ -1,0 +1,1 @@
+MATCH (n1)-[:KNOWS]->(p)<-[:HAS_CREATOR]-(m)-[:HAS_TAG]->(t) WHERE ID(n1)=1741913 AND EXISTS(t.name) RETURN n1, p, m, t, t.name

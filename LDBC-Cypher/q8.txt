@@ -1,0 +1,1 @@
+MATCH (p)<-[:HAS_CREATOR]-(c)-[:REPLY_OF]->(m)-[:HAS_CREATOR]->(n1) WHERE ID(n1)=1774622 RETURN m, c, p

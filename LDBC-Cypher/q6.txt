@@ -1,0 +1,1 @@
+MATCH (n1)-[:KNOWS]->(p1)-[:KNOWS]->(p2)<-[:HAS_CREATOR]-(p:Post)-[:HAS_TAG]->(t1) MATCH (p)-[:HAS_TAG]->(t2) WHERE ID(t1)=1718300 AND ID(n1)=810011 RETURN n1, p1, p2, p, t1, t2
